@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "GitHub Big Gist Editor",
+	"version": "1.0",
+	"description": "Auto expand to a larger gist editor when you resize your window.",
+	"host_permissions": ["https://gist.github.com/*"],
+	"content_scripts": [
+		{
+			"matches": ["https://gist.github.com/*"],
+			"css": ["styles.css"]
+		}
+	]
+}
